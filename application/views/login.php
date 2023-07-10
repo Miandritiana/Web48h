@@ -216,7 +216,6 @@
 				z-index: 5;
 			}
 		}
-
   </style>
 
 </head>
