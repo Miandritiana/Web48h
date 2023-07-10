@@ -222,7 +222,7 @@
 </head>
 <body>
     
-<div class="container right-panel-active">
+<div class="container left-panel-active">
 
 	<!-- Sign In -->
 	<div class="container__form container--signin">
@@ -239,7 +239,7 @@
 	<div class="container__form container--signup">
 		<form action="<?php echo base_url('login/inscri'); ?>" class="form" id="form1" method="get">
 			<h2 class="form__title">Sign Up</h2>
-			<input type="text" placeholder="User" class="input" name="nom"/>
+			<input type="text" placeholder="Nom d'utilisateur" class="input" name="nom"/>
 			<input type="email" placeholder="Email" class="input" name="mail"/>
 			<input type="password" placeholder="Password" class="input" name="mdp"/>
 			<button type="submit" class="btn">Sign Up</button>

@@ -8,7 +8,6 @@ class Login extends CI_Controller {
   
   public function checkLog() 
   {
-
     $nom = $this->input->get('nom');
     $mdp = $this->input->get('mdp');
 
