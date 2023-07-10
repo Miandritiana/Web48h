@@ -1,17 +1,16 @@
 <?php
 class Login extends CI_Controller {
   
-  public function index() {
-    $this->load->view('header');
+  public function index() 
+  {
     $this->load->view('login');
   }
   
-  public function login() {
+  public function checkLog() 
+  {
 
-    $this->load->library('input');
     $nom = $this->input->get('nom');
     $mdp = $this->input->get('mdp');
-    
 
     $this->load->model('login_model');
     $user = $this->login_model->login($nom, $mdp);
@@ -24,6 +23,18 @@ class Login extends CI_Controller {
       $data['error'] = 'Identifiants invalides.';
       $this->load->view('login', $data);
     }
+  }
+
+  public function inscri() 
+  {
+
+    $nom = $this->input->get('nom');
+    $mdp = $this->input->get('mail');
+    $mdp = $this->input->get('mdp');
+
+    $this->load->model('login_model');
+    $user = $this->login_model->login($nom, $mdp);
+
   }
   
   public function logout() {
